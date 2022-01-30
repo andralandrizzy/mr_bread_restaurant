@@ -19,7 +19,7 @@ const TopNav = () => {
             </a>
           </Navbar.Text>
           <Navbar.Text>
-            <a className={NavTopStyle.link}>
+            <a href="mailto:mr_bread_email@gmail.com" className={NavTopStyle.link}>
               {" "}
               <span>
                 {" "}

@@ -3,7 +3,7 @@ import NavbarStyle from "../styles/navbar.module.css";
 import { Navbar, Image, Nav, Container, NavDropdown } from "react-bootstrap";
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="md" className={NavbarStyle.nav} variant="dark">
+    <Navbar sticky="top" collapseOnSelect expand="md" className={NavbarStyle.nav} variant="dark">
       <Container>
         <Link href="/">
           <Navbar.Brand className={NavbarStyle.lg_ling}>

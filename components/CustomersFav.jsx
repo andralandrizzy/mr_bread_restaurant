@@ -33,7 +33,7 @@ const CustomersFav = () => {
       <Container>
         <Row className={FavStyle.wrapper}>
           {foods.map(food => (
-            <Col className={FavStyle.itemWrap}>
+            <Col key={food.id} className={FavStyle.itemWrap}>
               <div className={FavStyle.item}>
                 <Image className={FavStyle.foodImg} src={food.image} width= "100" height="100"/>
                 <h2 className={FavStyle.title}>{food.title}</h2>

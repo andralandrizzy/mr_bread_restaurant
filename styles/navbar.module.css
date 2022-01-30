@@ -19,9 +19,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.listItem:last-child {
+.listItem:hover, .listItem:focus {
+    /* color: #1C7148; */
     background-color:#1C7148;
     border-radius: 7px;
+    color: #fff;
 }
 
 .lg_link {
