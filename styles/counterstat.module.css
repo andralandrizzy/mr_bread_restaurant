@@ -1,0 +1,36 @@
+.counterItems {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: hsla(151, 59%, 28%, 0.26);
+    padding: 4.5rem;
+    
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.counter {
+    font-size: 3rem;
+    
+}
+@media (max-width: 600px) {
+
+    .counterItems{
+        padding: 2.5rem 0;
+    }
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counter {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 0.56rem;
+    }
+}

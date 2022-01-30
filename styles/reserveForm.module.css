@@ -1,0 +1,69 @@
+.wrapper {
+    position: relative;
+    z-index: 100;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5rem;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.form {
+    padding: 0 2rem;
+    text-align: start;
+}
+.btn {
+    background-color: hsl(151, 59%, 28%);
+    outline: none;
+    border: none;
+    width: 200px;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+.btn:focus, .btn:hover {
+    background-color: hsl(151, 72%, 31%);
+    transform: scale(0.97);
+    transition: all .2s ease-in-out;
+}
+
+
+.intro {
+    font-family: 'Shrikhand', cursive;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    margin: 1.5rem auto;
+    position: relative;
+    top: 100;
+    font-size: 3rem;
+}
+
+.intro::after {
+    content: "Book a Table";
+    color: hsla(151, 60%, 28%, 0.288);
+    position: absolute;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 8rem;
+    bottom: -30%;
+    left: 31%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        font-size: 1.8rem;
+    }
+    .intro::after{
+        left: 15%;
+        bottom: -5%;
+        font-size: 4rem;
+    }
+
+    .wrapper {
+        padding: 2.2rem 0;
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,106 @@
+.wrap {
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menuItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 3rem auto;
+    font-family: 'Poppins', sans-serif;
+}
+.items{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    background-color: rgba(224, 224, 224, 0.212);
+} 
+
+.imgWrap{
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.price {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 4px;
+    font-weight: bolder;
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #1C7148;
+}
+
+.img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+}
+
+.text {
+    padding: 0.4rem 0;
+}
+
+.title {
+    font-size: 1.67rem;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: solid #1C7148 1px;
+    color: rgba(0, 0, 0, 0.733);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.btn:hover, .btn:focus {
+    background-color: #1C7148;
+    color: #fff;
+    border: solid rgba(0, 0, 0, 0.63) 1px;
+}
+
+.intro {
+    font-family: 'Shrikhand', cursive;
+    color: rgba(0, 0, 0, 0.719);
+    /* z-index: 10; */
+    margin-top: 3.8rem;
+    position: relative;
+    font-size: 3rem;
+}
+
+.intro::after {
+    content: "Specialties";
+    color: hsla(151, 60%, 28%, 0.288);
+    position: absolute;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 8rem;
+    bottom: -20%;
+    left: 40%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .menuItems {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intro{
+        font-size: 2rem;
+    }
+    .intro::after{
+        left: 15%;
+        bottom: -20%;
+        font-size: 6rem;
+    }
+
+    .wrap {
+        padding: 0;
+    }
+}

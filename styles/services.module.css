@@ -1,0 +1,74 @@
+.items {
+    margin: 3rem auto;
+    width: 100%;
+    padding: 4rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrap {
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+.icon {
+    font-size: 3.7rem;
+    color: #1C7148;
+}
+.icon:hover {
+    cursor: pointer;
+    color: hsla(151, 62%, 28%, 0.808);;
+}
+
+.intro {
+    font-family: 'Shrikhand', cursive;
+    color: rgba(0, 0, 0, 0.719);
+    /* z-index: 10; */
+    margin-top: 3.8rem;
+    position: relative;
+    font-size: 3rem;
+}
+
+.intro::after {
+    content: " Services";
+    color: hsla(151, 60%, 28%, 0.288);
+    position: absolute;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 8rem;
+    bottom: -20%;
+    left: 40%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    z-index: 1;
+}
+
+
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intro{
+        font-size: 2rem;
+    }
+    .intro::after{
+        left: 15%;
+        bottom: -20%;
+        font-size: 6rem;
+    }
+
+
+    .wrap {
+        padding: 0;
+    }
+}

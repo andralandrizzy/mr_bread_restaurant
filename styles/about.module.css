@@ -1,0 +1,78 @@
+.wrapper {
+    width: 100%;
+    margin: 5rem auto;
+    padding-bottom: 3.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+.imgWrap {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 1.5rem;
+}
+.aboutImg {
+    width: 250px;
+    height: 441px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.aboutImg:last-child {
+    top: 12%;
+}
+
+.aboutInfo {
+    position: relative;
+}
+.title {
+    font-family: 'Shrikhand', cursive;
+    color: rgba(0, 0, 0, 0.719);
+    /* z-index: 10; */
+    margin-top: 3.8rem;
+}
+
+.title::after {
+    content: " About";
+    color: hsla(151, 60%, 28%, 0.288);
+    position: absolute;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 6.8rem;
+    top: -20%;
+    left: 0;
+    z-index: 1;
+}
+
+.operation {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.25rem;
+    color: rgba(39, 38, 38, 0.692);
+}
+.phone{
+    color: hsl(151, 59%, 28%);
+    font-size: 1.8rem;
+}
+.description {
+    font-weight: 300;
+}
+
+@media (max-width: 600px) {
+    .imgWrap {
+        gap: 12px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+
+    .aboutInfo {
+        margin-top: 2.5rem;
+    }
+
+    .phone{
+        font-size: 1.6rem;
+    }
+}

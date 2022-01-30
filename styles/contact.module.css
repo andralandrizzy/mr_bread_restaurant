@@ -1,0 +1,77 @@
+.wrap {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+    width: 100%;
+    padding: 3rem;
+    margin: 2rem auto;
+
+}
+
+.contact_map {
+    width: 100%;
+}
+.formContainer {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.form {
+    margin-top: 2.5rem
+}
+
+.contactItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.infoContact{
+    font-size: 0.98rem;
+    width: 70%;
+    padding: 1.5rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon {
+    margin-right: 1.4rem;
+    font-size: 2.2rem;
+}
+
+.btn {
+    background-color: hsl(151, 59%, 28%);
+    outline: none;
+    border: none;
+    width: 200px;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+.btn:focus, .btn:hover {
+    background-color: hsl(151, 66%, 69%);
+    transform: scale(0.97);
+    transition: all .2s ease-in-out;
+}
+
+.address, .phone, .email {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+}
+
+.street, .hrs_operation, .msg {
+    font-weight: 300;
+    font-size: 0.86rem;
+}
+
+
+@media (max-width: 600px) {
+    .contactItem {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrap {
+        padding: 0;
+    }
+  }

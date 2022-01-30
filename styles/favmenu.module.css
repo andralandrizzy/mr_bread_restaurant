@@ -1,0 +1,39 @@
+.itemWrap {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+.title {
+    font-size: 1.08rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 15px auto;
+    color: rgb(0, 0, 0);
+}
+
+.foodImg {
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 1.5rem;
+    }
+
+    .title {
+        font-size: 0.98rem;
+    }
+
+    .item {
+        font-size: 0.68rem;
+    }
+}
