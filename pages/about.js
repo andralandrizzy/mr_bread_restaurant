@@ -2,7 +2,7 @@ import About from "../components/About";
 import StatsCounter from "../components/StatsCounter";
 import Services from "../components/Services";
 import HeaderContent from "../components/HeaderContent";
-const about = ({text}) => {
+const about = () => {
   return (
     <>
       <div className="show_content about">
