@@ -37,7 +37,7 @@ a {
 
 .reservation::after{
   content: "";
-  background-color: hsla(0, 0%, 0%, 0.671);
+  background-color: hsla(0, 0%, 0%, 0.678);
   width: 100%;
   height: 85vh;
   position: absolute;
@@ -105,6 +105,22 @@ a {
   font-size: 3.1rem;
 }
 
+.cust_fav {
+  text-align: center;
+  margin: 3rem auto;
+  width: 60%;
+}
+
+.cust_fav h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.cust_fav p {
+  font-family: 'Poppins', sans-serif;
+}
+
 .book {
   text-align: center;
   width: 100%;
@@ -148,9 +164,20 @@ h1, h2, h3 {
   margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   .show_content_info h1 {
     font-size: 2.5rem;
+  }
+
+  .cust_fav {
+    width: 90%;
+  }
+  .cust_fav h1 {
+    font-size: 2rem;
+  }
+  .cust_fav p {
+    font-size: 0.9rem;
+    margin-top: 15px;
   }
 
   .footer {

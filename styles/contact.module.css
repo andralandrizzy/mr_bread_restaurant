@@ -59,14 +59,17 @@
     align-items: flex-start;
     font-size: 1.1rem;
 }
-
+.email .mailto {
+    color: rgba(0, 0, 0, 0.712);
+    text-decoration: none;
+}
 .street, .hrs_operation, .msg {
     font-weight: 300;
     font-size: 0.86rem;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
     .contactItem {
         grid-template-columns: repeat(1, 1fr);
     }

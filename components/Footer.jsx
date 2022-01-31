@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div>
         <p>
-          Copyright `&copy;` 2022 All rights reserved | This template was made by
+          Copyright &copy; 2022 All rights reserved | This template was made by
           Andral Orelus
         </p>
       </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
@@ -37,7 +38,9 @@ const Contact = () => {
                     <AiOutlineMail />
                   </span>
                 <p>
-                  mr_bread_email@gmail.com <br />{" "}
+                  <Link href="mailto:mr_bread_email@gmail.com">
+                    <a className={contactForm.mailto}>mr_bread_email@gmail.com</a>
+                  </Link>  <br />{" "}
                   <span className={contactForm.msg}>
                     Send us your query at anytime
                   </span>

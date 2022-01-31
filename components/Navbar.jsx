@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import NavbarStyle from "../styles/navbar.module.css";
 import { Navbar, Image, Nav, Container, NavDropdown } from "react-bootstrap";
+import { AiOutlineShoppingCart } from "react-icons/ai"
+
+
 const Header = () => {
   return (
     <Navbar sticky="top" collapseOnSelect expand="md" className={NavbarStyle.nav} variant="dark">
@@ -32,6 +35,12 @@ const Header = () => {
             <Link href= "/order">
               <a className={NavbarStyle.listItem}>Place order
               </a>
+            </Link>
+            <Link href= "/">
+              <div className={NavbarStyle.listItem}>
+                <a><AiOutlineShoppingCart/></a>
+              <span>2</span>
+              </div>
             </Link>
           </Nav>
         </Navbar.Collapse>

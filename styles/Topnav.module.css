@@ -24,7 +24,7 @@
 }
 /* @media (max-width: 300px) {} */
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
     .nav{
         border: solid red 1px;
         display: none;
