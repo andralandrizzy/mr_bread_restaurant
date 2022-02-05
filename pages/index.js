@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={styles.homepage}>
       <Head>
-        <title>Mr Bread's Restaurant | Home</title>
+        <title>Mr Bread Restaurant | Home</title>
         <meta name="description" content="phoenix restaurant" />
         <link rel="stylesheet" type="text/css" 
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />

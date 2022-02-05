@@ -4,6 +4,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { GrLocation } from "react-icons/gr";
 import contactForm from "../styles/contact.module.css";
+
 const Contact = () => {
   return (
     <>

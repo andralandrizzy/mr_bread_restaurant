@@ -72,6 +72,7 @@ const settings = {
                     className={FavStyle.foodImg}
                     src={food.image}
                     layout="fill"
+                    alt={food.title}
                   />
                 </div>
                 <h2 className={FavStyle.title}>{food.title}</h2>

@@ -9,7 +9,7 @@ const menu = () => {
   return (
     <>
       <Head>
-        <title>Mr Bread's Restaurant | Home</title>
+        <title>Mr Breads Restaurant | Home</title>
         <meta name="description" content="phoenix restaurant" />
         <link
           rel="stylesheet"
