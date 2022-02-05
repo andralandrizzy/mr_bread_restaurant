@@ -9,7 +9,7 @@ const HeaderContent = (props) => {
         <Link href="/">
           <a className="prev">{props.prevpage}</a>
         </Link>
-        <span> `>` </span>
+        <span> {`>`} </span>
         <a className="active">{props.activepage}</a>
       </div>
     </div>

@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <div className={contactForm.formContainer}>
               <h1 style={{ fontSize: "2.5rem" }}>Contact us</h1>
-              <Form className="mt-5" className = {contactForm.form}>
+              <Form className = {contactForm.formWrap}>
                 <Form.Group
                   className="mb-4"
                   controlId="exampleForm.ControlInput1"
